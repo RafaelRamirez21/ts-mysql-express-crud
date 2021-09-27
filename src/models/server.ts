@@ -8,7 +8,8 @@ class Server{
   private app:Application;
   private port:string;
   private apiPaths={
-    movies:'/api/movies',
+    movies:'/movies',
+    // movies:'/',
   };
 
   constructor(){
