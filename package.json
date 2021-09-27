@@ -6,9 +6,7 @@
   "scripts": {
     "start": "node ./dist/app.js"
   },
-  "engines": {
-    "node": "14.x"
-  },
+
   "keywords": [],
   "author": "Rafael Ramirez <rrramirezb251@gmail.com>",
   "license": "MIT",
