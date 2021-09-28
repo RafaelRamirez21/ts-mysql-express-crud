@@ -1,1 +1,1 @@
-web:ts-node/dist/app.ts
+web:ts-node/src/app.ts
