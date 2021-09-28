@@ -4,8 +4,8 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "start": "ts-node dist/app.js",
-    "dev": "nodemon -x ts-node dist/app.js"
+    "start": "node dist/app.js",
+    "dev": "nodemon dist/app.js"
   },
   "keywords": [],
   "author": "Rafael Ramirez <rrramirezb251@gmail.com>",
