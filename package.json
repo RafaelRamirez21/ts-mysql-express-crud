@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./dist/app.js"
+    "start": "ts-node src/config/server.ts",
+    "dev": "nodemon -x ts-node src/config/server.ts"
   },
-
   "keywords": [],
   "author": "Rafael Ramirez <rrramirezb251@gmail.com>",
   "license": "MIT",
@@ -17,10 +17,13 @@
   },
   "dependencies": {
     "@types/cors": "^2.8.12",
+    "@types/node": "^16.10.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5"
+    "nodemon": "^2.0.13",
+    "sequelize": "^6.6.5",
+    "ts-node": "^10.2.1"
   }
 }
