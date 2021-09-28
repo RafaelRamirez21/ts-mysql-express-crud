@@ -1,7 +1,11 @@
 import {Request,Response} from 'express';
 import Movie from '../models/movie';
 
+export const getMain= async (req:Request,res:Response)=>{
+  
 
+  res.send('welcome to API movies ts /movies to get all the database');
+}
 
 export const getMovies= async (req:Request,res:Response)=>{
   const movies=await Movie.findAll();

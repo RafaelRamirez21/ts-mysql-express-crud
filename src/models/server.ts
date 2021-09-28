@@ -2,6 +2,7 @@ import express,{Application} from 'express';
 import moviesRoutes from '../routes/movies';
 import cors from 'cors';
 import db from '../db/connection';
+import homeRoutes from '../routes/home'
 
 
 class Server{
@@ -9,6 +10,7 @@ class Server{
   private port:string;
   private apiPaths={
     movies:'/movies',
+    home:'/',
     // movies:'/',
   };
 
@@ -18,6 +20,7 @@ class Server{
     this.dbConnection();
     this.middlewares();
     this.routes();
+    this.routes_h();
     
   }
   middlewares(){      
@@ -45,6 +48,9 @@ class Server{
 
   routes(){
     this.app.use(this.apiPaths.movies,moviesRoutes)
+  }
+  routes_h(){
+    this.app.use(this.apiPaths.home,homeRoutes)
   }
 
   listen(){

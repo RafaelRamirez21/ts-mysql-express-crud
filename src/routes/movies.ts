@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { deleteMovie, getMovie, getMovies, postMovie, putMovie } from "../controllers/movies";
+import { deleteMovie, getMain, getMovie, getMovies, postMovie, putMovie } from "../controllers/movies";
 const router =Router();
 
 router.get('/',        getMovies)
